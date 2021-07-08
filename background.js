@@ -15,6 +15,8 @@
             -use sockets for real time communication to see if there are any changes to the keywords in popup.html
 */
 
+//note this is not the best implementation as it goes through all the tabs every time
+//you can optimize it by only selecting a newly created tab or a tab that is updated
 function remove_anime_manga_tabs() {
     //get all the tabs as an empty object is passed to query
     chrome.tabs.query({}, function(all_tabs, err){
