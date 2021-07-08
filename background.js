@@ -29,7 +29,7 @@ function remove_anime_manga_tabs() {
             domain names and finally convert the string to a regex
         */
        //matches all websites with scans, manga, toon and updates in their subdomain
-        let regex = /(.*scans.*|.*manga.*|.*toon.*|.*updates.*).(com|org|net|ru|co|in)\/.*/;
+        let regex = /(.*scans.*|.*manga.*|.*toon.*|.*updates.*|.*manhwa.*).(com|org|net|ru|co|in)\/.*/;
 
         for(let i = 0; i<all_tabs.length; i++){
             //fetch the url of a tab
